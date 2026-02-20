@@ -73,11 +73,11 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 50px; 
-    align-items: stretch; 
+    align-items: stretch; /* Pantay ang height ng columns */
 }
 
 .column-left {
-    flex: 1.5; 
+    flex: 1.5; /* Mas malaki ang video area */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -129,7 +129,7 @@ body {
     line-height: 1.2;
     color: black;
     text-align: center;
-    margin-top: auto; 
+    margin-top: auto; /* Itutulak ang text pababa para pumantay sa images */
     padding: 20px;
 }
 
