@@ -23,8 +23,4 @@ document.addEventListener('DOMContentLoaded', function() {
         emailBtn.addEventListener('click', () => showSurvey('SURVEY: Paki-lagay ang iyong email para sa aming newsletter.'));
     }
     
-    const homeBtn = document.getElementById('nav-home');
-    if (homeBtn) {
-        homeBtn.addEventListener('click', () => alert('Nasa Home page ka na.'));
-    }
-});
+    
