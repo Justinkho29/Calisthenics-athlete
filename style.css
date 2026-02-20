@@ -79,7 +79,7 @@ body {
     height: auto;
     display: block;
     border-radius: 12px; 
-    box-shadow: 0 4px 15px (0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 h2 {
@@ -98,20 +98,54 @@ p {
     color: black;
 }
 
-  .footer-next {
-            text-align: center;
-            margin-top: px;
-            padding-bottom: 40px;
-            cursor: pointer;
-        }
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 50px 20px;
+    background-color: white;
+}
 
-        .footer-next h1 {
-            font-size: 42px;
-            font-weight: 900;
-            text-transform: uppercase;
-            margin: 0;
-        }
+.start-btn {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 20px 50px;
+    border: 2px solid black;
+    border-radius: 8px;
+    display: inline-block;
+}
 
+.start-btn h1 {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+
+.start-btn:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
+}
+
+.footer-next {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+
+.footer-next h1 {
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
 
 @media (max-width: 768px) {
     .header {
@@ -124,10 +158,13 @@ p {
         gap: 20px;
     }
     .section {
-        flex-direction: column !important ;
+        flex-direction: column !important;
         text-align: center;
     }
     .image-container {
         margin-bottom: 20px;
+    }
+    .start-btn h1 {
+        font-size: 32px;
     }
 }
