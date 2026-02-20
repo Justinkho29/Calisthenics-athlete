@@ -98,20 +98,19 @@ p {
     color: black;
 }
 
-.footer {
-    text-align: center;
-    padding: 50px 0;
-    margin-top: 50px;
-    background-color: white;
-}
+  .footer-next {
+            text-align: center;
+            margin-top: px;
+            padding-bottom: 40px;
+            cursor: pointer;
+        }
 
-.footer h1 {
-    font-size: 40px;
-    font-weight: 900;
-    color: gray;
-    margin: 0;
-    letter-spacing: 2px;
-}
+        .footer-next h1 {
+            font-size: 42px;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 0;
+        }
 
 
 @media (max-width: 768px) {
