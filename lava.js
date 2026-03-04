@@ -22,5 +22,4 @@ document.addEventListener('DOMContentLoaded', function() {
     if (emailBtn) {
         emailBtn.addEventListener('click', () => showSurvey('SURVEY: Paki-lagay ang iyong email para sa aming newsletter.'));
     }
-    
-    
+}); 
