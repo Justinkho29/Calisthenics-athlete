@@ -51,30 +51,29 @@ body {
     letter-spacing: 6px;
 }
 
-.nav {
-    display: flex;
-    gap: 25px;
-}
+       nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
 
-.nav a {
-    font-weight: 700; 
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
+        nav ul li {
+            display: inline-block;
+            margin-left: 30px;
+        }
 
-.nav a:hover {
-    color: #555;
-}
+       
+        .nav-link {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.2s;
+        }
 
-.split-wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 50px; 
-    align-items: stretch;
-}
+        .nav-link:hover {
+            color: #666; /* Magbabago ang kulay pag tinapat ang mouse */
+        }
 
 .column-left {
     flex: 1.5; 
