@@ -1,10 +1,9 @@
 function showSurvey(question) {
     const response = prompt(question);
-
     if (response) {
-        alert('Salamat sa iyong sagot: ' + response);
+        window.location.href = 'index.html';
     } else {
-        alert('Nag-cancel ka ng survey.');
+        window.location.href = 'index.html';
     }
 }
 
@@ -12,28 +11,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const contactBtn = document.getElementById('nav-contact');
     if (contactBtn) {
         contactBtn.addEventListener('click', function() {
-            showSurvey('SURVEY: Ano ang iyong katanungan para sa "Contact Us"?');
+            window.location.href = 'index.html';
         });
     }
 
     const aboutBtn = document.getElementById('nav-about');
     if (aboutBtn) {
         aboutBtn.addEventListener('click', function() {
-            showSurvey('SURVEY: Ano ang pinaka-gusto mong malaman tungkol sa amin?');
+            window.location.href = 'last.html';
         });
     }
 
     const emailBtn = document.getElementById('nav-email');
     if (emailBtn) {
         emailBtn.addEventListener('click', function() {
-            showSurvey('SURVEY: Paki-lagay ang iyong email para sa aming newsletter.');
+            window.location.href = 'protein.html';
         });
     }
 
     const homeBtn = document.getElementById('nav-home');
     if (homeBtn) {
         homeBtn.addEventListener('click', function() {
-            alert('Nasa Home page ka na.');
+            window.location.href = 'index.html';
         });
     }
 });
