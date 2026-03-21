@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
-
-* { 
+ { 
     box-sizing: border-box; 
     margin: 0;
     padding: 0;
@@ -17,7 +16,7 @@ body {
     padding: 20px;
 }
 
-/* --- HEADER & NAV --- */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -45,7 +44,7 @@ nav ul {
     color: #888;
 }
 
-/* --- MAIN LAYOUT (2 COLUMNS) --- */
+
 .split-wrapper {
     display: flex;
     flex-direction: row;
@@ -65,7 +64,6 @@ nav ul {
     flex-direction: column;
 }
 
-/* --- TITLES --- */
 .col-title {
     font-size: 18px;
     font-weight: 800;
@@ -74,7 +72,7 @@ nav ul {
     color: #000;
 }
 
-/* --- VIDEOS --- */
+
 .video-container {
     display: flex;
     flex-direction: column;
@@ -84,7 +82,7 @@ nav ul {
 .video-item {
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    padding-bottom: 56.25%; 
     height: 0;
     overflow: hidden;
     border-radius: 10px;
@@ -100,7 +98,7 @@ nav ul {
     border: none;
 }
 
-/* --- TEXT BELOW VIDEOS --- */
+
 .tutorial-text {
     font-size: 18px;
     line-height: 1.5;
@@ -111,7 +109,7 @@ nav ul {
     padding: 0 10px;
 }
 
-/* --- DIAGRAM IMAGES (RIGHT COLUMN) --- */
+
 .diagram-container {
     display: flex;
     flex-direction: column;
@@ -121,12 +119,12 @@ nav ul {
 
 .diagram-container img {
     width: 100%;
-    max-width: 300px; /* Pinipigilan itong maging sobrang laki */
+    max-width: 300px; 
     height: auto;
     object-fit: contain;
 }
 
-/* --- FOOTER (HOME) --- */
+
 .footer {
     display: flex;
     justify-content: center;
@@ -149,7 +147,7 @@ nav ul {
     transform: scale(1.05);
 }
 
-/* --- RESPONSIVE / MOBILE VIEW --- */
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
