@@ -1,0 +1,77 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a; 
+    color: #f4f4f4;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #262626;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+
+h1, h2, h3 {
+    color: #ffcc00; 
+    text-transform: uppercase;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.contact-box {
+    background-color: #333;
+    padding: 20px;
+    border-left: 6px solid #ffcc00;
+    border-radius: 4px;
+}
+
+.phone-num {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #444;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #e6b800;
+}
