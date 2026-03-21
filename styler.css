@@ -157,7 +157,11 @@ body {
 }
 
 @media (max-width: 768px) {
-    .header { flex-direction: column; gap: 20px; }
-    .nav { justify-content: center; flex-wrap: wrap; gap: 20px; }
-    .split-wrapper { flex-direction: column; gap: 40px; }
+    .header { flex-direction:
+        column; gap: 20px; }
+    .nav ul li { justify-content:
+        center; flex-wrap: wrap; gap: 20px; }
+    .split-wrapper { flex-direction:
+        column; gap: 40px; }
 }
+
