@@ -51,28 +51,12 @@ body {
     letter-spacing: 6px;
 }
 
-       .nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav ul li {
+              .nav ul li {
             display: inline-block;
             margin-left: 30px;
         }
-
-       
-        .nav-link {
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-            font-size: 18px;
-            transition: 0.2s;
-        }
-
         .nav-link:hover {
-            color: #666; /* Magbabago ang kulay pag tinapat ang mouse */
+            color: #666; 
         }
 
 .column-left {
