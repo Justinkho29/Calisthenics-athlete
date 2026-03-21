@@ -1,76 +1,118 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
 
-{
-    box-sizing: border-box; 
-}
+* { box-sizing: border-box; }
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #F8FFFF;
-    color: black;
-    line-height: 1.6;
 }
 
 .container {
-    max-width: 1200px; 
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-
+/* Header & Logo */
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
+    padding: 20px 0;
 }
 
-.logo {
+/* Main Layout */
+.split-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.column-left { flex: 1.5; }
+.column-right { flex: 1; }
+
+.col-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Videos */
+.video-container {
     display: flex;
     flex-direction: column;
-    width: 280px;
+    gap: 15px;
 }
 
-.logo h1 {
-    font-size: 50px;
-    font-weight: 900;
-    color: #555555;
-    margin: 0;
-    line-height: 0.8;
-    letter-spacing: 1px;
-}
-
-.logo hr {
+.video-item {
+    position: relative;
     width: 100%;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.video-item iframe {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
     border: none;
-    border-top: 5px solid #888;
-    margin: 10px 0;
 }
 
-.logo h2 {
-    font-size: 20px;
-    font-weight: 400;
-    color: #aaaaaa;
-    margin: 0;
-    letter-spacing: 6px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Images */
+.diagram-container {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.nav-link {
-    text-decoration: none;
+.diagram-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* --- ITO YUNG FIX PARA SA TEXT SA screenshot mo --- */
+.tutorial-text {
+    width: 100%;
+    max-width: 800px; /* Para hindi sobrang haba ng line ng text */
+    margin: 40px auto; /* Centered with top/bottom space */
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: center;
     color: #333;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.footer h1 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+/* Media Query para sa Lahat ng Devices */
+@media (max-width: 768px) {
+    .split-wrapper {
+        flex-direction: column;
+    }
+    
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tutorial-text {
+        font-size: 18px;
+    }
+}
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
